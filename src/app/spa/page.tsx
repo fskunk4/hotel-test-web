@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero } from '@/components/page-hero';
+import { HeavyClientShell } from '@/components/heavy-client-shell';
 import { wellnessPillars } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -51,6 +52,8 @@ export default function SpaPage() {
           </article>
         ))}
       </section>
+
+      <HeavyClientShell />
     </>
   );
 }

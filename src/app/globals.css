@@ -378,13 +378,36 @@ textarea {
   opacity: 0.99;
 }
 
+.debug-client-panel {
+  max-height: 18rem;
+  overflow: auto;
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 4rem;
+}
+
+.debug-client-panel ul {
+  columns: 2;
+  padding-left: 1rem;
+}
+
 @media (max-width: 719px) {
   .nav-list {
     flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
   }
 
   .hero-card {
     margin-top: -2rem;
+  }
+
+  .card-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .text-link {
+    font-size: 1.25rem;
   }
 }
 

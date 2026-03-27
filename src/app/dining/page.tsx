@@ -40,6 +40,7 @@ export default function DiningPage() {
             <li>Freshly baked morning pastries and regional cheeses</li>
             <li>Wood-roasted fish with fennel, lemon, and olive oil</li>
             <li>Late-night terrace cocktails and house-made infusions</li>
+            <li><a href="/menus/dinner.pdf">Download dinner menu PDF</a></li>
             <li>Comfort menu available after spa treatments and evening arrivals</li>
           </ul>
         </div>
