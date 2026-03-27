@@ -10,9 +10,12 @@ export const metadata: Metadata = {
   title: 'Home',
   description: 'Welcome to our website.',
   applicationName: site.name,
+  alternates: {
+    canonical: '/',
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
