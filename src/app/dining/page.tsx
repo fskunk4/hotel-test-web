@@ -3,7 +3,7 @@ import { PageHero } from '@/components/page-hero';
 import { diningMoments } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Dining',
+  title: 'Hotel Dining & Terrace Restaurant in Zagreb',
   description: 'Discover the hotel restaurants, terrace service, and in-room dining at Hotel Aureline.',
 };
 
