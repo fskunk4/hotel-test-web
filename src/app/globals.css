@@ -172,6 +172,12 @@ a {
   padding: 0.35rem 0;
 }
 
+.nav-list li,
+.nav-list a {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .hero,
 .page-hero,
 .section-grid,
