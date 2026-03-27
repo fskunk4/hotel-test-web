@@ -1,6 +1,6 @@
 export const site = {
   name: 'Hotel Aureline',
-  url: 'https://example.com',
+  url: 'http://localhost:3000',
   description:
     'A calm five-star city retreat blending design-led rooms, seasonal dining, restorative wellness, and thoughtful service.',
   phone: '+385 1 555 0100',

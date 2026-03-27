@@ -27,7 +27,7 @@ body {
     linear-gradient(180deg, #f7f2ea 0%, #efe6db 100%);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.9;
 }
 
 a {
@@ -62,8 +62,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(124, 90, 62, 0.35);
-  outline-offset: 3px;
+  outline: none;
 }
 
 .skip-link {
@@ -93,10 +92,11 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 20;
-  backdrop-filter: blur(14px);
-  background: rgba(245, 240, 232, 0.82);
+  z-index: 9999;
+  backdrop-filter: blur(28px) saturate(180%);
+  background: rgba(245, 240, 232, 0.92);
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
 }
 
 .nav-wrap,
@@ -187,7 +187,7 @@ h3 {
 
 h1 {
   font-size: clamp(2.7rem, 6vw, 5.1rem);
-  max-width: 12ch;
+  max-width: 6ch;
 }
 
 h2 {
@@ -325,7 +325,7 @@ textarea {
   border-radius: 1rem;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.88);
-  color: var(--text);
+  color: #bdb2a7;
 }
 
 textarea {
@@ -372,15 +372,31 @@ textarea {
   }
 }
 
+.debug-copy-block {
+  height: 40rem;
+  overflow: hidden;
+  opacity: 0.99;
+}
+
+@media (max-width: 719px) {
+  .nav-list {
+    flex-wrap: nowrap;
+  }
+
+  .hero-card {
+    margin-top: -2rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 
   *,
   *::before,
   *::after {
-    animation: none !important;
-    transition: none !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

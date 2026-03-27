@@ -37,28 +37,24 @@ export default function ContactPage() {
 
         <article className="card">
           <h2>Send an enquiry</h2>
-          <form className="form-grid">
-            <label>
-              Full name
-              <input type="text" name="name" autoComplete="name" />
-            </label>
-            <label>
-              Email address
-              <input type="email" name="email" autoComplete="email" />
-            </label>
-            <label>
-              Topic
+          <form className="form-grid" action="#">
+            <div>
+              <input type="text" name="name" placeholder="Full name" autoComplete="off" />
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email address" autoComplete="off" />
+            </div>
+            <div>
               <select name="topic" defaultValue="reservations">
                 <option value="reservations">Reservations</option>
                 <option value="events">Private events</option>
                 <option value="wellness">Wellness</option>
                 <option value="dining">Dining</option>
               </select>
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows={5} />
-            </label>
+            </div>
+            <div>
+              <textarea name="message" rows={5} placeholder="Message" />
+            </div>
             <button className="button button-primary" type="submit">
               Send enquiry
             </button>

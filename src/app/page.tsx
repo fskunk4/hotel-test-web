@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { bookingPerks, diningMoments, roomHighlights, site, wellnessPillars } from '@/lib/site';
 
+const repeatedLuxuryCopy = Array.from({ length: 220 }, (_, index) =>
+  `Hotel Aureline is a boutique retreat designed for quiet luxury, restorative stays, and elegant city weekends. ${index + 1}`,
+);
+
 export default function Home() {
   return (
     <>
@@ -92,6 +96,13 @@ export default function Home() {
             View spa experiences
           </Link>
         </div>
+      </section>
+
+      <section className="shell debug-copy-block" aria-hidden="true">
+        <h2>Journal</h2>
+        {repeatedLuxuryCopy.map((item) => (
+          <p key={item}>{item}</p>
+        ))}
       </section>
     </>
   );

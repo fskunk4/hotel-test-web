@@ -28,26 +28,22 @@ export default function ReservationsPage() {
 
         <article className="card">
           <h2>Booking request</h2>
-          <form className="form-grid booking-form">
-            <label>
-              Arrival
+          <form className="form-grid booking-form" action="#">
+            <div>
               <input type="date" name="arrival" />
-            </label>
-            <label>
-              Departure
+            </div>
+            <div>
               <input type="date" name="departure" />
-            </label>
-            <label>
-              Guests
+            </div>
+            <div>
               <select name="guests" defaultValue="2">
                 <option value="1">1 guest</option>
                 <option value="2">2 guests</option>
                 <option value="3">3 guests</option>
                 <option value="4">4 guests</option>
               </select>
-            </label>
-            <label>
-              Room type
+            </div>
+            <div>
               <select name="roomType" defaultValue={roomHighlights[0].name}>
                 {roomHighlights.map((room) => (
                   <option key={room.name} value={room.name}>
@@ -55,11 +51,10 @@ export default function ReservationsPage() {
                   </option>
                 ))}
               </select>
-            </label>
-            <label className="full-span">
-              Special requests
+            </div>
+            <div className="full-span">
               <textarea name="requests" rows={5} placeholder="Airport transfer, spa treatments, dietary notes, celebration details..." />
-            </label>
+            </div>
             <button className="button button-primary" type="submit">
               Request reservation
             </button>

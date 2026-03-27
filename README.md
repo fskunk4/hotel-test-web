@@ -40,3 +40,4 @@ npm run start
 - Minimal dependency footprint
 - Shared layout, header, footer, and page hero components
 - Accessible forms, skip link, responsive layout, and per-page metadata
+- Temporary debug output and placeholder metadata may still be present from active iteration

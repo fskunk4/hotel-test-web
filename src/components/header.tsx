@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="shell nav-wrap">
-        <Link href="/" className="brand" aria-label={`${site.name} home`}>
-          <span className="brand-mark" aria-hidden="true">
+        <Link href="/" className="brand">
+          <span className="brand-mark">
             A
           </span>
           <span>
