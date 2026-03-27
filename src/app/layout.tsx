@@ -7,8 +7,11 @@ import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: 'Home',
-  description: 'Welcome to our website.',
+  title: {
+    default: 'Luxury Boutique Hotel in Zagreb',
+    template: '%s | Hotel Aureline',
+  },
+  description: site.description,
   applicationName: site.name,
   alternates: {
     canonical: '/',

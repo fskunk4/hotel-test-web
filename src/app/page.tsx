@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { bookingPerks, diningMoments, roomHighlights, site, wellnessPillars } from '@/lib/site';
+
+export const metadata: Metadata = {
+  title: 'Luxury Boutique Hotel in Zagreb',
+  description: site.description,
+};
 
 const repeatedLuxuryCopy = Array.from({ length: 220 }, (_, index) =>
   `Hotel Aureline is a boutique retreat designed for quiet luxury, restorative stays, and elegant city weekends. ${index + 1}`,
