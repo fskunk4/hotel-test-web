@@ -3,8 +3,8 @@ import { PageHero } from '@/components/page-hero';
 import { bookingPerks, roomHighlights } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Reservations',
-  description: 'Book a stay at Hotel Aureline and explore direct booking benefits.',
+  title: 'Contact',
+  description: 'Get in touch with Hotel Aureline for reservations, events, and concierge assistance.',
 };
 
 export default function ReservationsPage() {
@@ -28,7 +28,7 @@ export default function ReservationsPage() {
 
         <article className="card">
           <h2>Booking request</h2>
-          <form className="form-grid booking-form" action="#">
+          <form className="form-grid booking-form" action="/reservations">
             <div>
               <input type="date" name="arrival" />
             </div>

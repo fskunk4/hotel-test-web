@@ -3,8 +3,8 @@ import { PageHero } from '@/components/page-hero';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Hotel Aureline for reservations, events, and concierge assistance.',
+  title: 'Home',
+  description: 'Welcome to our website.',
 };
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
 
         <article className="card">
           <h2>Send an enquiry</h2>
-          <form className="form-grid" action="#">
+          <form className="form-grid" action="/contact">
             <div>
               <input type="text" name="name" placeholder="Full name" autoComplete="off" />
             </div>
