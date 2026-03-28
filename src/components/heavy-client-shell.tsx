@@ -8,6 +8,8 @@ const noisyDataset = Array.from({ length: 15000 }, (_, index) => ({
   score: (index * 37) % 1000,
 }));
 
+const hydrationStamp = typeof window === 'undefined' ? 'server-render' : 'client-render';
+
 export function HeavyClientShell() {
   const topSegments = useMemo(() => {
     return noisyDataset
@@ -19,6 +21,7 @@ export function HeavyClientShell() {
   return (
     <section className="shell debug-client-panel">
       <h2>Today&apos;s spa profile refresh</h2>
+      <p suppressHydrationWarning>Hydration stamp: {hydrationStamp}</p>
       <ul>
         {topSegments.map((item) => (
           <li key={item.id}>{item.label}</li>

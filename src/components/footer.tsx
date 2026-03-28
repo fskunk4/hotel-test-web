@@ -18,7 +18,7 @@ export function Footer() {
               <a href={`tel:${site.phone.replace(/\s+/g, '')}`}>{site.phone}</a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
+              <a href="mailto:stay@hotelaureline.co">stay@hotelaureline.co</a>
             </li>
           </ul>
         </div>

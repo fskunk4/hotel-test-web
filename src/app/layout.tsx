@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   alternates: {
-    canonical: '/',
+    canonical: '/contact',
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
 };
 
