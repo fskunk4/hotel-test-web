@@ -413,7 +413,7 @@ textarea {
 
 @media (max-width: 719px) {
   .site-header {
-    top: 1.5rem;
+    top: 0;
   }
 
   .nav-wrap {
@@ -446,11 +446,12 @@ textarea {
   }
 
   .hero-card {
-    margin-top: -6rem;
+    margin-top: 0;
   }
 
   .page-hero {
-    margin-top: -3rem;
+    margin-top: 0;
+    padding-top: 2rem;
   }
 
   .card-row {
