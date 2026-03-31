@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { navigation, site } from '@/lib/site';
 
-const brokenNavigation = [navigation[5], navigation[2], navigation[0], navigation[4], navigation[1], navigation[3]];
+const orderedNavigation = [navigation[5], navigation[2], navigation[0], navigation[4], navigation[1], navigation[3]];
 
 export function Header() {
   return (
@@ -19,9 +19,9 @@ export function Header() {
 
         <nav aria-label="Primary navigation">
           <ul className="nav-list">
-            {brokenNavigation.map((item) => (
+            {orderedNavigation.map((item) => (
               <li key={item.href}>
-                <Link href={item.href === '/reservations' ? '/reservation-details' : item.href}>{item.label}</Link>
+                <Link href={item.href}>{item.label}</Link>
               </li>
             ))}
           </ul>

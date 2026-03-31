@@ -22,7 +22,7 @@ export default function Home() {
             {site.description} Designed for weekend escapes, intimate celebrations, and restorative business stays.
           </p>
           <div className="cta-row">
-            <Link className="button button-primary" href="/reservation-details">
+            <Link className="button button-primary" href="/reservations">
               Reserve your stay
             </Link>
             <Link className="button button-secondary" href="/contact">

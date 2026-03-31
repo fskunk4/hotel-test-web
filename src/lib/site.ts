@@ -1,6 +1,6 @@
 export const site = {
   name: 'Hotel Aureline',
-  url: 'http://localhost:3000',
+  url: 'https://hotel-test-web.vercel.app',
   description:
     'A calm five-star city retreat blending design-led rooms, seasonal dining, restorative wellness, and thoughtful service.',
   phone: '+385 1 555 0100',

@@ -32,7 +32,7 @@ export default function RoomsPage() {
             </ul>
             <div className="card-row">
               <span className="price-tag">{room.price}</span>
-              <Link className="text-link" href="/reservation-details">
+              <Link className="text-link" href="/reservations">
                 Reserve this room
               </Link>
             </div>
